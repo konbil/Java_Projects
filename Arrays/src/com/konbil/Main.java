@@ -1,5 +1,6 @@
 package com.konbil;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +18,14 @@ public class Main {
           arr[i] = in.nextInt();
         }
 
-        for(int i=0; i<arr.length; i++) {
-            System.out.print(arr[i] + "  " );
-        }
+        System.out.println(Arrays.toString(arr));
+
+//        for(int i=0; i<arr.length; i++) { //for every element in array, print the element
+//            System.out.print(arr[i] + "  " );
+//        }
+
+//        for(int num : arr){
+//            System.out.print(num + " ");
+//        }
     }
 }
