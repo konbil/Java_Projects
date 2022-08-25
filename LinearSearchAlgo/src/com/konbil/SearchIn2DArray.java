@@ -9,7 +9,9 @@ public class SearchIn2DArray {
                 {18, 12}
         };
 
-        search2d(arr, 919);
+        //search2d(arr, 919);
+        System.out.println(max(arr));
+
     }
 
     static int search2d(int[][] arr, int target){
@@ -27,5 +29,22 @@ public class SearchIn2DArray {
         }
         System.out.println("Not found");
         return -1;
+    }
+//Find Max in 2D
+    static int max(int[][] arr){
+        if(arr == null){
+            return -1;
+        }
+        int max = Integer.MIN_VALUE;
+
+        for (int row = 0; row < arr.length; row++){
+            for(int col = 0; col < arr[row].length; col++){
+                if(arr[row][col] > max){
+                    max = arr[row][col];
+                }
+            }
+        }
+
+        return max;
     }
 }
