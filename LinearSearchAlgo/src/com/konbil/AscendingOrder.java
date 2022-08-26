@@ -1,9 +1,10 @@
 package com.konbil;
 //https://uncareer.net/vacancy/data-clerk-g4-466860
+
 public class AscendingOrder {
     public static void main(String[] args) {
-        int[] nums= {12,1,5,99,23,54,7};
-       ArrangeInAscendingOrder(nums);
+        int[] arr= {12,1,5,99,23,54,7};
+       ArrangeInAscendingOrder(arr);
     }
 
     static int ArrangeInAscendingOrder(int[] arr){
